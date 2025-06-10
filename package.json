@@ -8,23 +8,7 @@
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DilmiSansala/E-commerce.git"
-  },
-  "keywords": [
-    "nodejs",
-    "express",
-    "mongodb",
-    "rest-api",
-    "ecommerce"
-  ],
-  "author": "Dilmi Sansala",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DilmiSansala/E-commerce/issues"
-  },
-  "homepage": "https://github.com/DilmiSansala/E-commerce#readme",
+  
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",

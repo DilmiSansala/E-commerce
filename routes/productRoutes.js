@@ -1,4 +1,3 @@
-
 const express = require('express');
 const { 
   createProduct, 
@@ -7,7 +6,6 @@ const {
   updateProduct, 
   deleteProduct 
 } = require('../controllers/productController');
-
 const router = express.Router();
 
 // Product routes
