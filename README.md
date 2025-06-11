@@ -69,7 +69,7 @@ bashgit clone <your-repo-url>
 cd E-commerce
 
 Install dependencies
-bashnpm install
+npm install
 
 Create environment file
 
