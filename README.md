@@ -1,97 +1,42 @@
-🛒 E-commerce REST API
-A complete RESTful API built with Node.js, Express.js, and MongoDB for managing users and products in an e-commerce application.
+E-commerce REST API A complete RESTful API built with Node.js, Express.js, and MongoDB for managing users and products in an e-commerce application.
 
-✨ Features
-👤 User Management
-User registration with password hashing
+User Management
 
-User login with JWT authentication
+User registration with password hashing User login authentication Get all users
 
-Fetch all users
+Product Management
 
-📦 Product Management
-Full CRUD operations for products
+Create, Read, Update, Delete (CRUD) operations Product validation Inventory management
 
-Product data validation
+Security
 
-Inventory management (e.g., quantity, stock)
+Password hashing with bcrypt Input validation Error handling
 
-🔐 Security
-Password hashing using bcryptjs
+API Design
 
-Input validation
-
-Centralized error handling
-
-🔧 API Design
-RESTful endpoint structure
-
-JSON-formatted responses
-
-Proper HTTP status codes
-
-CORS enabled
+RESTful endpoints JSON responses Proper HTTP status codes CORS enabled
 
 🛠️ Tech Stack
-Backend: Node.js, Express.js
 
-Database: MongoDB with Mongoose ODM
+Backend: Node.js, Express.js Database: MongoDB with Mongoose ODM Security: bcryptjs for password hashing Others: CORS, dotenv
 
-Security: bcryptjs for password hashing
+📁 Project Structure E-commerce/ ├── controllers/ │ ├── userController.js # User business logic │ └── productController.js # Product business logic ├── models/ │ ├── User.js # User data model │ └── Product.js # Product data model ├── routes/ │ ├── userRoutes.js # User API endpoints │ └── productRoutes.js # Product API endpoints ├── server.js # Main server file ├── package.json # Project dependencies ├── .env # Environment variables ├── .gitignore # Git ignore file └── README.md # Project documentation 🚦 Getting Started Prerequisites
 
-Other: CORS, dotenv
+Node.js (v14 or higher) MongoDB (local installation or MongoDB Atlas) npm or yarn package manager
 
-📁 Project Structure
-bash
-Copy
-Edit
-E-commerce/
-├── controllers/
-│   ├── userController.js         # User business logic
-│   └── productController.js      # Product business logic
-├── models/
-│   ├── User.js                   # User data model
-│   └── Product.js                # Product data model
-├── routes/
-│   ├── userRoutes.js             # User API endpoints
-│   └── productRoutes.js          # Product API endpoints
-├── middleware/
-│   └── authMiddleware.js         # JWT auth and error handlers (if used)
-├── server.js                     # Main server file
-├── package.json                  # Project dependencies
-├── .env                          # Environment variables
-├── .gitignore                    # Git ignore file
-└── README.md                     # Project documentation
-🚦 Getting Started
-✅ Prerequisites
-Node.js (v14 or higher)
+Installation
 
-MongoDB (local or MongoDB Atlas)
+Clone the repository bashgit clone cd E-commerce
 
-npm or yarn
-Create a .env file in the root directory and add:
-PORT=3000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_super_secret_jwt_key_here
+Install dependencies npm install
 
-For production mode:
-npm start
-🔗 API Endpoints
-User Routes (/api/users)
-POST /register - Register a new user
+Create environment file
 
-POST /login - Authenticate user
+PORT=3000 JWT_SECRET=your_super_secret_jwt_key_here
 
-GET / - Get all users
+Run the application
 
-Product Routes (/api/products)
-POST / - Create a new product
+npm run dev
 
-GET / - Get all products
-
-GET /:id - Get a product by ID
-
-PUT /:id - Update a product by ID
-
-DELETE /:id - Delete a product by ID
-
+Production mode
+npm start            
