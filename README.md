@@ -69,17 +69,6 @@ Node.js (v14 or higher)
 MongoDB (local or MongoDB Atlas)
 
 npm or yarn
-
-📥 Installation
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/E-commerce.git
-cd E-commerce
-Install dependencies:
-npm install
 Create a .env file in the root directory and add:
 PORT=3000
 MONGODB_URI=your_mongodb_connection_string
