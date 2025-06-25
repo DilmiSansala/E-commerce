@@ -79,30 +79,13 @@ Edit
 git clone https://github.com/yourusername/E-commerce.git
 cd E-commerce
 Install dependencies:
-
-bash
-Copy
-Edit
 npm install
 Create a .env file in the root directory and add:
-
-ini
-Copy
-Edit
 PORT=3000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_super_secret_jwt_key_here
-Run the application in development mode:
 
-bash
-Copy
-Edit
-npm run dev
 For production mode:
-
-bash
-Copy
-Edit
 npm start
 🔗 API Endpoints
 User Routes (/api/users)
